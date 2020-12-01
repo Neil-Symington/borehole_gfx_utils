@@ -23,6 +23,10 @@ header_query = """
 
 select
    b.borehole_name,
+   e.geom_original.sdo_point.x as orig_lon,
+   e.geom_original.sdo_point.y as orig_lat,
+   e.geom_original.sdo_point.z as orig_z,
+   e.geom_original.sdo_srid as orig_srid,
    sum.ENO,
    sum.COUNTRY,
    sum.STATE,
@@ -39,6 +43,8 @@ select
    sum.LOCATION_METHOD,
    sum.GDA94_LONGITUDE,
    sum.GDA94_LATITUDE,
+   crs.SRID,
+   crs.COORD_REF_SYS_NAME,
    drt.DEPTH_REFERENCE_TYPE_ID
 
 
@@ -46,6 +52,8 @@ from
 
    borehole.boreholes b
    left join BOREHOLE.ALL_BOREHOLE_CURRENT_SUMMARY sum on b.borehole_id = sum.eno
+   left join A.ENTITIES e on b.borehole_id = e.eno
+   left join sdo_coord_ref_sys crs on e.geom_original.sdo_srid = crs.SRID
    left join borehole.lu_depth_reference_types drt on sum.DEPTH_REFERENCE_TYPE = drt.TEXT
 
 
@@ -59,10 +67,22 @@ and
            ','.join([str(x) for x in enos]))
 
 
-
 df_header = pd.read_sql_query(header_query, con = ora_con)
 
-# Now we do some processing
+
+def name2epsg(names):
+    crs_lookup = {"MGA94 Zone 52": "EPSG:28352", "MGA94 Zone 53": "EPSG:28353", "GDA94": "EPSG:4283",
+                  "WGS 84": "EPSG:4326", "AMG Zone 52 (AGD 84)": "EPSG:20352",
+                  "AMG Zone 53 (AGD 66)": "EPSG:20353"}
+    epsgs = []
+    for s in names:
+        epsgs.append(crs_lookup[s])
+    return epsgs
+
+
+# Get the epsg codes for each bore
+
+df_header["Orig_EPSG"] = name2epsg(df_header['COORD_REF_SYS_NAME'].values)
 
 # Create a dataframe with only the important spatial information
 
@@ -112,12 +132,12 @@ for index, row in df_header.iterrows():
 df_merged = df_master.merge(df_header, left_on = ['UWI', 'DEPTH_REFERENCE_ID'],
                             right_on = ['ENO', 'DEPTH_REFERENCE_TYPE_ID'])
 
-# We add the more modern GDA2020 coordinates to the dataframe
-transformer = Transformer.from_crs("EPSG:4283", "EPSG:7844", always_xy = True)
 
-lons, lats = df_merged['GDA94_LONGITUDE'].values, df_merged['GDA94_LATITUDE'].values
+# We also want to tranform all bore into their projected coordinate system. As all bores are either zone 52 and 53
+# we only need two tranformers.
 
-df_merged['GDA2020_longitude'], df_merged['GDA2020_latitude'] =transformer.transform(lons, lats)
+transformers_from_GDA94 = {"GDA94 / MGA zone 52": Transformer.from_crs("EPSG:4283", "EPSG:28352", always_xy = True),
+                             "GDA94 / MGA zone 53": Transformer.from_crs("EPSG:4283", "EPSG:28353", always_xy = True)}
 
 # Now we transform to projected coordinates. We infer the correct system from the longitude
 
@@ -125,27 +145,16 @@ df_merged['GDA2020_longitude'], df_merged['GDA2020_latitude'] =transformer.trans
 df_merged['projected_crs'] = ''
 df_merged['easting'] = np.nan
 df_merged['northing'] = np.nan
-
-transformer_z52 = Transformer.from_crs("EPSG:4283", "EPSG:28352", always_xy = True)
-transformer_z53 = Transformer.from_crs("EPSG:4283", "EPSG:28353", always_xy = True)
-
-z52_mask = (df_merged['GDA2020_longitude'] > 126.) & (df_merged['GDA2020_longitude'] < 132.)
-z53_mask = (df_merged['GDA2020_longitude'] > 132.) & (df_merged['GDA2020_longitude'] < 138.)
-
-# make sure we have covered all the coordinate reference systems
-assert len(df_merged) == z52_mask.sum() + z53_mask.sum()
-
-x_52, y_52 = transformer_z52.transform(df_merged['GDA94_LONGITUDE'], df_merged['GDA94_LATITUDE'])
-x_53, y_53 = transformer_z53.transform(df_merged['GDA94_LONGITUDE'], df_merged['GDA94_LATITUDE'])
-
-df_merged.at[z52_mask,'projected_crs'] = ["GDA94 / MGA zone 52"] * z52_mask.sum()
-df_merged.at[z53_mask,'projected_crs'] = ["GDA94 / MGA zone 53"] * z53_mask.sum()
-
-df_merged.at[z52_mask,'easting'] = x_52[z52_mask.values]
-df_merged.at[z53_mask,'easting'] = x_53[z53_mask.values]
-
-df_merged.at[z52_mask,'northing'] = y_52[z52_mask.values]
-df_merged.at[z53_mask,'northing'] = y_53[z53_mask.values]
-
+df_merged['geographic_crs'] = "GDA94"
+# Iterate through the frame and make the transform
+for index, row in df_merged.iterrows():
+    x, y = np.float64(row['GDA94_LONGITUDE']), np.float64(row['GDA94_LATITUDE'])
+    if 126. < x <= 132.:
+        crs = "GDA94 / MGA zone 52"
+    elif 132. < y <= 136.:
+        crs = "GDA94 / MGA zone 53"
+    x_proj, y_proj = transformers_from_GDA94[crs].transform(x,y)
+    df_merged.at[index, ['easting', 'northing']] = [x_proj, y_proj]
+    df_merged.at[index,'projected_crs'] = crs
 
 df_merged.to_csv("EFTF_induction_spatial_data.csv", index = False)
