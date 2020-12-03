@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 # load the required fields from the yaml file
-yaml_file = "lasfile_required_fields.yaml"
+yaml_file = "lasfile_parsing_settings.yaml"
 fields = yaml.safe_load(open(yaml_file))['metadata_fields']
 # Define las file
 

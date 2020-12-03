@@ -4,14 +4,15 @@ import numpy as np
 import sys
 sys.path.append(r'H:\scripts')
 import connect_to_oracle
-from pyproj import CRS, Transformer
+from pyproj import Transformer
+
 
 # Set up a connection to the oracle database
 ora_con = connect_to_oracle.connect_to_oracle()
 
 # Load the master spreadsheet
 
-infile = "EFTF_induction_master.csv"
+infile = "EFTF_induction_gamma_master.csv"
 df_master = pd.read_csv(infile, keep_default_na=False)
 
 enos = df_master['UWI'].values
@@ -69,21 +70,6 @@ and
 
 df_header = pd.read_sql_query(header_query, con = ora_con)
 
-
-def name2epsg(names):
-    crs_lookup = {"MGA94 Zone 52": "EPSG:28352", "MGA94 Zone 53": "EPSG:28353", "GDA94": "EPSG:4283",
-                  "WGS 84": "EPSG:4326", "AMG Zone 52 (AGD 84)": "EPSG:20352",
-                  "AMG Zone 53 (AGD 66)": "EPSG:20353"}
-    epsgs = []
-    for s in names:
-        epsgs.append(crs_lookup[s])
-    return epsgs
-
-
-# Get the epsg codes for each bore
-
-df_header["Orig_EPSG"] = name2epsg(df_header['COORD_REF_SYS_NAME'].values)
-
 # Create a dataframe with only the important spatial information
 
 df_header['Reference_datum_height_(mAGL)'] = np.nan
@@ -130,14 +116,14 @@ for index, row in df_header.iterrows():
 
 
 df_merged = df_master.merge(df_header, left_on = ['UWI', 'DEPTH_REFERENCE_ID'],
-                            right_on = ['ENO', 'DEPTH_REFERENCE_TYPE_ID'])
+                                       right_on = ['ENO', 'DEPTH_REFERENCE_TYPE_ID'])
 
 
 # We also want to tranform all bore into their projected coordinate system. As all bores are either zone 52 and 53
 # we only need two tranformers.
 
 transformers_from_GDA94 = {"GDA94 / MGA zone 52": Transformer.from_crs("EPSG:4283", "EPSG:28352", always_xy = True),
-                             "GDA94 / MGA zone 53": Transformer.from_crs("EPSG:4283", "EPSG:28353", always_xy = True)}
+                           "GDA94 / MGA zone 53": Transformer.from_crs("EPSG:4283", "EPSG:28353", always_xy = True)}
 
 # Now we transform to projected coordinates. We infer the correct system from the longitude
 
@@ -157,4 +143,4 @@ for index, row in df_merged.iterrows():
     df_merged.at[index, ['easting', 'northing']] = [x_proj, y_proj]
     df_merged.at[index,'projected_crs'] = crs
 
-df_merged.to_csv("EFTF_induction_spatial_data.csv", index = False)
+df_merged.to_csv("EFTF_induction_gamma_spatial_data.csv", index = False)

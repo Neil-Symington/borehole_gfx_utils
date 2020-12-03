@@ -1,0 +1,32 @@
+metadata_fields:
+  # Define metadata fields that we expect each las file to contain. These are described in this document
+  # https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Feb2017.pdf on page 5
+  "STRT": {"required": True, dtype: "float", format: "{:.3f}", unit: "metres", description: "start logging depth"}
+  "STOP": {"required": True, dtype: "float", format: "{:.3f}", unit: "metres", description: "stop logging depth"}
+  "STEP": {"required": True, dtype: "float", format: "{:.2f}", unit: "metres", description: "logging interval"}
+  "NULL": {"required": True, dtype: ["float", "int"], description: "null value"}
+  "COMP": {"required": True, dtype: "str", description: "logging company"}
+  "WELL": {"required": True, dtype: "str", use_col: "BOREHOLE_NAME", description: "borehole name"}
+  "DATE": {"required": True, dtype: "str", description: "date of acquisition YYYY-MM-DD"}
+  "UWI": {"required": True, dtype: "int", description: "borehole unique id (eno)", use_col: "UWI"}
+  "X": {"required": True, dtype: "float", format: "{:.1f}", use_col: "easting", unit: "metres", description: "X or East-West coordinate"}
+  "Y": {"required": True, dtype: "float", format: "{:.1f}", use_col: "northing", unit: "metres", description: "Y or North-South coordinate"}
+  "LONGI": {"required": True, dtype: ["float", "str"], format: "{:.6f}", use_col: "GDA94_LONGITUDE", unit: "degrees", description: "Longitude in geodetic datum"}
+  "LATI": {"required": True, dtype: ["float", "str"], format: "{:.6f}", use_col: "GDA94_LATITUDE", unit: "degrees", description: "Latitude in geodetic datum"}
+  "GDAT": {"required": True, dtype: "str", use_col: "geographic_crs", description: "geodetic datum"}
+  "HZCS": {"required": True, dtype: "str", use_col: "projected_crs", description: "projected coordinate"}
+  "LMF": {"required": True, dtype: "str", use_col: "DEPTH_REFERENCE_TYPE", description: "reference datum"}
+  "APD": {"required": True, dtype: "float", format: "{:.3f}", use_col: "Reference_datum_height_(mAGL)", unit: "m",
+          description: "elevation of reference datum above ground"}
+  "EPD": {"required": True, dtype: "float", format: "{:.1f}", use_col: "ground_elevation_(mAHD)", unit: "mAHD",
+          description: "ground elevation"}
+  "STAT": {"required": True, dtype: "str", use_col: "STATE"} # Country
+  "CTRY": {"required": True, dtype: "str", use_col: "COUNTRY"} # State
+  "SRVC": {"required": True, dtype: "str", use_col: "SRVC"}
+  "FLD": {"required": True, dtype: "str", use_col: "FLD"}
+
+instruments:
+  "A034": {instrument_name: "A034 Induction Conductivity Probe", channel_offset: [0.6], log_type: "induction"}
+  "HII-383": {instrument_name: "HII-383 Induction Conductivity Probe", channel_offset: [0.4, 0.6], log_type: "induction"}
+  "A031": {instrument_name: "A031 Natural Gamma Probe", log_type: "gamma"}
+  "QL40": {instrument_name: "QL40 SGR Spectral Gamma Probe", log_type: "gamma"}
