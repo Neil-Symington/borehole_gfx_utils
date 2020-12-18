@@ -36,7 +36,6 @@ def get_essential_fields(yaml_file, log = None):
                 essential_fields[item]['description'] = fields[item]["description"]
             else:
                 essential_fields[item]['description'] = ""
-
     return essential_fields
 
 def extract_step_from_las(las):

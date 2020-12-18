@@ -15,11 +15,12 @@ metadata_fields:
   "LATI": {"required": True, dtype: ["float", "str"], format: "{:.6f}", use_col: "GDA94_LATITUDE", unit: "degrees", description: "Latitude in geodetic datum"}
   "GDAT": {"required": True, dtype: "str", use_col: "geographic_crs", description: "geodetic datum"}
   "HZCS": {"required": True, dtype: "str", use_col: "projected_crs", description: "projected coordinate"}
-  "LMF": {"required": True, dtype: "str", use_col: "DEPTH_REFERENCE_TYPE", description: "reference datum"}
+  "LMF": {"required": True, dtype: "str", use_col: "DEPTH_REFERENCE_TYPE", description: "Log Measured From"}
   "APD": {"required": True, dtype: "float", format: "{:.3f}", use_col: "Reference_datum_height_(mAGL)", unit: "m",
-          description: "elevation of reference datum above ground"}
+          description: "Above Permanent Datum"}
   "EPD": {"required": True, dtype: "float", format: "{:.1f}", use_col: "ground_elevation_(mAHD)", unit: "mAHD",
-          description: "ground elevation"}
+          description: "Elevation of Permanant Datum"}
+  "PDAT": {"required": True, dtype: "str", use_col: "vertical_datum", description: "Permanent datum"}
   "STAT": {"required": True, dtype: "str", use_col: "STATE"} # Country
   "CTRY": {"required": True, dtype: "str", use_col: "COUNTRY"} # State
   "SRVC": {"required": True, dtype: "str", use_col: "SRVC"}

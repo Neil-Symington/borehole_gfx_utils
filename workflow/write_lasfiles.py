@@ -22,7 +22,7 @@ master_spreadsheet = 'EFTF_induction_gamma_metadata_all_corrected.csv'
 
 df_master = pd.read_csv(master_spreadsheet, keep_default_na=False)
 
-outdir = r'C:\temp\cleaned_las'
+outdir = r'C:\temp\cleaned_las_again_gamma'
 
 if not os.path.exists(outdir):
     os.mkdir(outdir)
@@ -30,6 +30,10 @@ if not os.path.exists(outdir):
 # Now extract the ones that have been assigned as essential as well and other information
 
 essential_fields = get_essential_fields(yaml_file, log)
+
+print(essential_fields['NULL'])
+
+exit()
 
 for index, row in df_master.iterrows():
     path = "_".join([log, "path"])
@@ -43,11 +47,11 @@ for index, row in df_master.iterrows():
     for item in essential_fields:
         col = essential_fields[item]["use_col"]
         value = row[col]
-        ## This is a bit of a hack as only floats have formats currently
         if "format" in essential_fields[item]:
             value = np.float(value)
             fmt = essential_fields[item]['format']
             value = fmt.format(value)
+
         # If the fields exist already, the values can be assigned using setattr()
         if item in las.well.keys():
             setattr(las.well, item, value)
@@ -59,8 +63,8 @@ for index, row in df_master.iterrows():
             las.well[item] = new_header
     # Replace the channel metadata
     params = las.params.dictview().keys()
-    for item in params:
-        del las.params[item]
+    #for item in params:
+    #    del las.params[item]
     # Add the instrument
     column = "_".join([log, "instrument"])
     instrument = instruments[row[column]]['instrument_name']
@@ -72,6 +76,15 @@ for index, row in df_master.iterrows():
         if str(las.well[item].value) == "":
             del las.well[item]
 
+    # Here we ensure we keep the precision from the original files
+    df = las.df()
+    column_fmt = {0: "%.2f"}
+    for i, item in enumerate(df.columns):
+        str_curve = list(df[item].astype(str).values)
+        sig_fig = max([len(s.split('.')[-1]) for s in str_curve])
+        fmt = "%.{}f".format(sig_fig)
+        column_fmt[i+1] = fmt
     outfile = os.path.join(outdir, "_".join([row['WELL'], log + ".las"]))
-    las.write(outfile, version = 2.0)
-
+    #break
+    #las.write(outfile, version = 2.0, STEP = np.round(float(row['STEP_' + log]),3), column_fmt =column_fmt,
+    #          )

@@ -68,6 +68,7 @@ and
            ','.join([str(x) for x in enos]))
 
 
+
 df_header = pd.read_sql_query(header_query, con = ora_con)
 
 # Create a dataframe with only the important spatial information
