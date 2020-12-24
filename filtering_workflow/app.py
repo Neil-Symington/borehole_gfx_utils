@@ -1,7 +1,9 @@
+import os
 import dash
 from dash.dependencies import Input, Output, State
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+from plotly.io import write_html
 from scipy import stats
 import pandas as pd
 import numpy as np
@@ -10,7 +12,7 @@ import dash_core_components as dcc
 import dash_table
 import lasio
 import math
-
+import time
 
 def combination(n, r):
     """
@@ -68,7 +70,7 @@ def lasfile2df(lasfile):
     return df
 
 
-def row2filter_vars(df, row_number):
+def row2filter_vars(df, row_number, get_frame = True):
     # create a single row dataframe
     row = df.iloc[row_number]
     # get our values
@@ -87,13 +89,18 @@ def row2filter_vars(df, row_number):
     df = lasfile2df(lasfile).dropna(how='any')
     min_depth = np.min(df.index)
     max_depth = np.max(df.index)
-    data = df.to_dict('split')
-    WELL = row['WELL']
 
-    return {'lasfile': lasfile, 'filter_names': filters, 'filter_windows': filter_windows,
-            'min_windows': minimum_windows, 'min_depth': min_depth, 'max_depth': max_depth,
-            'logs': logs, 'resampling_interval': resampling_interval, 'log_options': log_options,
-            'data' : data, 'well': WELL}
+    WELL = row['WELL']
+    params = {'lasfile': lasfile, 'filter_names': filters, 'filter_windows': filter_windows,
+                'min_windows': minimum_windows, 'min_depth': min_depth, 'max_depth': max_depth,
+                'logs': logs, 'resampling_interval': resampling_interval, 'log_options': log_options,
+                'well': WELL}
+    if get_frame:
+        data = df.to_dict('split')
+        return data, params
+    else:
+        return params
+
 
 def find_trigger():
     ctx = dash.callback_context
@@ -106,9 +113,15 @@ def find_trigger():
 
 df_master = pd.read_csv('EFTF_induction_filtering_master_.csv')
 
+outdir = r"\\prod.lan\active\proj\futurex\Common\Working\Neil\filtered_borehoel_gfx\induction"
+
+if not os.path.exists(outdir):
+    os.mkdir(outdir)
 
 # Get the intial filtering parameters
-params = row2filter_vars(df_master, 0)
+init_data, init_params = row2filter_vars(df_master, 0, get_frame =True)
+
+init_depth = init_data['index']
 
 stylesheet = "https://codepen.io/chriddyp/pen/bWLwgP.css"
 app = dash.Dash(__name__, external_stylesheets=[stylesheet])
@@ -119,18 +132,22 @@ app.layout = html.Div([
                 dcc.Graph(id = 'log-plot', style = dict(height = 600)),
             className = 'six columns'),
         html.Div([
-                dcc.RangeSlider(
-                            id='top_and_tail',
-                            step=0.1,
-                            vertical=True,
-                            verticalHeight=400,
-                        ),
+            html.Div(["Minimum depth : ", dcc.Input(
+                        id="min_depth", type="number",
+                        min=0., max=np.max(init_depth) - 0.1,
+                value = init_params['min_depth'])], style={'marginTop':40 },
+                     className='row'),
+            html.Div(["Maximum depth: ", dcc.Input(
+                    id="max_depth", type="number",
+                    min=np.min(init_depth), max=np.max(init_depth),
+                value=init_params['max_depth'])],  style={'marginTop':200},
+                     className='row'),
         html.Div(id='clipping-output', style={'margin-top': 20})],
             style={'marginTop':90},
             className = 'two columns'),
         html.Div([dcc.Dropdown(id = "log-dropdown",
-                               options=params['log_options'],
-                               value=(params['logs'][0])),
+                               options=init_params['log_options'],
+                               value=(init_params['logs'][0])),
                   dash_table.DataTable(id='master_table',
                                 css=[{'selector': '.row', 'rule': 'margin: 0'}],
                                 columns = [{"name": i, "id": i} for i in df_master.columns],
@@ -167,46 +184,94 @@ app.layout = html.Div([
             min=5,
             max=55,
             step=1,
-            value=params['filter_windows'][0],
+            value=init_params['filter_windows'][0],
         ),
-dcc.Slider(
+        dcc.Slider(
             id='filter-size_2',
             min=5,
             max=55,
             step=1,
-            value=params['filter_windows'][1],
+            value=init_params['filter_windows'][1],
         ),
-    html.Div(id='filter-output', style={'margin-top': 20})
+        html.Div(["Filter 1 minimum window: ", dcc.Input(
+            id="min_window_1", type="number",
+            min=1, max=33, value=5)],
+                           className='row'),
+        html.Div(["Filter 2 minimum window: ", dcc.Input(
+                    id="min_window_2", type="number",
+                      min=1, max=33, value=5)],
+                           className='row'),
+
+        html.Div(id='filter-output', style={'margin-top': 20})
     ], className = "six columns"),
-    dcc.Store(id='filtering_parameters'),
+    dcc.Store(id='filtering_params'),
     dcc.Store(id='filtered_logs'),
-    dcc.Store(id='raw_logs')
+    dcc.Store(id='raw_logs'),
+    dcc.Store(id = 'initial_params')
     ])
 
 
 # Processing data call back
-@app.callback(Output('filtering_parameters', 'data'),
+@app.callback([Output('initial_params', 'data'),
+               Output('raw_logs', 'data'),
+               Output('min_depth', 'min'),
+               Output('min_depth', 'max'),
+               Output('min_depth', 'value'),
+               Output('max_depth', 'min'),
+               Output('max_depth', 'max'),
+               Output('max_depth', 'value'),
+                Output('log-dropdown', 'value'),
+               Output('log-dropdown', 'options')
+               ],
               [Input('master_table', "derived_virtual_selected_rows")])
 def process_row(selected_rows):
 
     selected_rows = selected_rows or [0]
 
-    params = row2filter_vars(df_master, selected_rows[0])
+    data, params = row2filter_vars(df_master, selected_rows[0])
 
-    return params
+    depths = data['index']
+    # parse the data to get the min max and value
+
+    min = np.min(depths)
+    max = np.max(depths)
+
+    min_depth_values = params['min_depth']
+    max_depth_values = params['max_depth']
+
+    log_options = params['log_options']
+
+    return params, data, 0., max - 0.1, min_depth_values, min, max, max_depth_values, log_options[0]['value'], log_options
 
 # Processing data call back
 @app.callback(Output('export-output', 'children'),
               [Input('export-button', "n_clicks")],
-              [State('filtered_logs', 'data')])
-def export_results(nclicks, filtered_logs):
+              [State('filtered_logs', 'data'),
+               State('filtering_params', 'data'),
+               State('log-plot', 'figure'),
+               State('log-dropdown', 'value')])
+def export_results(nclicks, filtered_logs, filtered_params, log_plot, log):
 
     if nclicks > 0:
-        filt = filtered_logs['filtered_data']
-        df_las = pd.DataFrame(index=filt['index'], data=filt['data'],
-                              columns=filt['columns'])
-        df_las.to_csv(r"C:\temp\example.txt")
-        return "Export successful"
+        tic = time.time()
+        well_name = filtered_params['well']
+        df_las = pd.DataFrame(index=filtered_logs['index'], data=filtered_logs['data'],
+                              columns=filtered_logs['columns'])
+        df_las['filtered_S/m'] = 10**df_las['filtered'].values
+        # Write the log to a csv
+        df_las['filtered_S/m'].to_csv(os.path.join(outdir, '_'.join([well_name, log, 'filtered.csv'])))
+        # Write the image to a html
+        write_html(log_plot,os.path.join(outdir, '_'.join([well_name, log, 'filtered.html'])))
+        # Write the metadata to a file
+        metadata = {'well': well_name, 'original_file': filtered_params['lasfile'],
+                    'filters': ','.join([str(n) for n in filtered_params['filter_names']]),
+                    'filter_windows': ','.join([str(n) for n in filtered_params['filter_windows']]),
+                    'min_windows': ','.join([str(n) for n in filtered_params['min_windows']]),
+                    'min_depth': filtered_params['min_depth'], 'max_depth': filtered_params['max_depth']}
+        pd.DataFrame(metadata, index = [0]).to_csv(os.path.join(outdir, '_'.join([well_name, log, 'metadata.csv'])), index = False)
+        toc = time.time()
+
+        return "Export successfully in " + str(np.round(toc - tic,1)) + " seconds"
     else:
         return ""
 
@@ -214,56 +279,63 @@ def export_results(nclicks, filtered_logs):
 @app.callback([Output('log-plot', 'figure'),
                Output('filter-output', 'children'),
                Output('clipping-output', 'children'),
+               Output('filtering_params', 'data'),
                Output('filtered_logs', 'data')],
-              [Input('top_and_tail', 'value'),
+              [Input("min_depth", 'value'),
+               Input("max_depth", 'value'),
                Input('filter-size_1', 'value'),
                Input('filter-size_2', 'value'),
                Input('log-dropdown', 'value'),
-               Input('filtering_parameters', 'data')],
-               [State('master_table', "derived_virtual_selected_rows")])
-def render_log(top_and_tail, filter_window_1, filter_window_2, log, params, selected_rows):
+               Input("min_window_1", 'value'),
+               Input("min_window_2", 'value'),
+               Input('initial_params', 'data')],
+               [State('filtering_params', 'data'),
+                State('raw_logs', 'data')])
+def render_log(min_depth, max_depth, filter_window_1, filter_window_2, log, min_window_1, min_window_2, initial_params, filtering_params,
+               raw_logs):
     trig_id = find_trigger()
+    print(trig_id)
+    # For none initialisation
+    if raw_logs is None:
 
-    selected_rows = selected_rows or [0]
-
-    params = row2filter_vars(df_master, selected_rows[0])
-
-    raw_logs = params['data']
+        raw_logs, initial_params = row2filter_vars(df_master, 0)
 
     df_las = pd.DataFrame(index = raw_logs['index'], data = raw_logs['data'],
                           columns = raw_logs['columns']).dropna(how='all')
+
+    # We use the filtered params if we have already adjusted the inital params
+    if trig_id == 'initial_params.data' or filtering_params is None:
+        params = initial_params.copy()
+    else:
+        params = filtering_params.copy()
 
     if trig_id == "log-dropdown.value":
         log = log
     else:
         log = params['logs'][0]
-
+    # Update our params with the call back values. These should always be
     params['filter_windows'][0] = filter_window_1
 
     params['filter_windows'][1] = filter_window_2
 
-    if trig_id == 'top_and_tail.value':
-        top_and_tail = top_and_tail
-    else:
-        top_and_tail = [0., params['max_depth']]
+    params['min_windows'][0] = min_window_1
+
+    params['min_windows'][1] = min_window_2
 
     filter_windows = params['filter_windows']
     fig = make_subplots(rows=1, cols=1)
 
     depths = df_las.index.values
-    values = df_las[log]
 
-    # Hack
-    min_depth = params['max_depth'] - top_and_tail[1]
-    max_depth = params['max_depth'] - top_and_tail[0]
+    values = 10**df_las[log]
 
     fig = fig.add_trace(go.Scatter(y=depths,x=values, mode= "lines", name = log + " unfiltered"), row = 1, col = 1)
     fig.update_yaxes(autorange='reversed', row=1,col=1)
 
-    df_las['filtered'] = np.nan
+    df_las['filtered'] = df_las[log].copy()
 
     for i, item in enumerate(params['filter_names']):
-        df_las['filtered'] = run_filter(df_las[log], filter_windows[i],
+        df_las['filtered'] = run_filter(df_las['filtered'], filter_windows[i],
                                         params['min_windows'][i], item)
 
     # plot 2 will be the filtered trace
@@ -278,9 +350,14 @@ def render_log(top_and_tail, filter_window_1, filter_window_2, log, params, sele
 
     df_downsampled = df_las.dropna().iloc[::n]
 
-    fig.add_trace(go.Scatter(y=df_downsampled.index, x=df_downsampled['filtered'].values,
+    filtered_values = 10**df_downsampled['filtered'].values
+
+    fig.add_trace(go.Scatter(y=df_downsampled.index, x=filtered_values,
                              mode= "lines", name = log + " filtered"),
                   row = 1, col = 1, )
+    fig.update_xaxes(type="log", title_text= "Conductivity (S/m)")
+    fig.update_yaxes(title_text="depth (m below reference datum)")
+    fig['layout'].update({'uirevision': initial_params})
 
     filter_msg = "Filter used were {} with a filter window of {}".format(', '.join(params['filter_names']),
                                                                          ', '.join([str(x) for x in filter_windows]))
@@ -288,45 +365,16 @@ def render_log(top_and_tail, filter_window_1, filter_window_2, log, params, sele
     clipper_msg = "Data above {} m and below {} m depth have been clipped".format(str(np.round(min_depth, 2)),
                                                                                   str(np.round(max_depth, 2)))
 
-    filtered_output = {'filtered_data': df_downsampled.to_dict('split'), 'min_depth': min_depth,
+    filtered_params = {'lasfile': params['lasfile'], 'min_depth': min_depth, 'min_windows': params['min_windows'],
                        'max_depth': max_depth, 'log': log, 'filter_names': params['filter_names'],
-                       'filter_windows': filter_windows}
+                       'filter_windows': filter_windows, 'well': params['well'], 'logs': params['logs'],
+                       'resampling_interval': params['resampling_interval']}
 
-    return [fig, filter_msg, clipper_msg, filtered_output]
+    filtered_logs = df_downsampled.to_dict('split')
 
-# update drop down menu
-@app.callback([Output('log-dropdown', 'value'),
-               Output('log-dropdown', 'options')],
-              [Input('master_table', "derived_virtual_selected_rows")])
-def update_dropdown(selected_rows):
-    selected_rows = selected_rows or [0]
+    return [fig, filter_msg, clipper_msg, filtered_params, filtered_logs]
 
-    log_options = row2filter_vars(df_master, selected_rows[0])['log_options']
-
-    return log_options[0]['value'], log_options
-
-# update drop down menu
-@app.callback([Output('top_and_tail', 'min'),
-               Output('top_and_tail', 'max'),
-               Output('top_and_tail', 'value')],
-              [Input('filtering_parameters', 'data')],
-               [State('master_table', "derived_virtual_selected_rows")])
-def update_slider(params, selected_rows):
-
-    print(params['well'])
-
-    raw_logs = params['data']
-
-    df_las = pd.DataFrame(index=raw_logs['index'], data=raw_logs['data'], columns=raw_logs['columns']).dropna(how='all')
-
-    value = [params['min_depth'], params['max_depth']]
-    min = 0.
-    max = np.max(df_las.index)
-
-    print(value)
-
-    return [min, max, value]
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)

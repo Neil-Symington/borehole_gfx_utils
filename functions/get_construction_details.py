@@ -48,8 +48,6 @@ where
 
 """.format(','.join([str(x) for x in enos]))
 
-
-
 df_header = pd.read_sql_query(header_query, con = ora_con)
 
-df_header.to_csv(r'construction.csv')
+df_header.to_csv('construction.csv')

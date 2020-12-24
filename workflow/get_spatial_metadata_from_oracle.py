@@ -138,7 +138,7 @@ for index, row in df_merged.iterrows():
     x, y = np.float64(row['GDA94_LONGITUDE']), np.float64(row['GDA94_LATITUDE'])
     if 126. < x <= 132.:
         crs = "GDA94 / MGA zone 52"
-    elif 132. < y <= 136.:
+    elif 132. < x <= 136.:
         crs = "GDA94 / MGA zone 53"
     x_proj, y_proj = transformers_from_GDA94[crs].transform(x,y)
     df_merged.at[index, ['easting', 'northing']] = [x_proj, y_proj]

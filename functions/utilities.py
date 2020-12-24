@@ -12,6 +12,7 @@ def get_essential_fields(yaml_file, log = None):
     # Create new dictionary
     essential_fields = {}
     for item in fields:
+
         if fields[item].get('required'):
             # Convert the data type to a numpy class
             if isinstance(fields[item]['dtype'], (list, tuple)):
@@ -36,6 +37,11 @@ def get_essential_fields(yaml_file, log = None):
                 essential_fields[item]['description'] = fields[item]["description"]
             else:
                 essential_fields[item]['description'] = ""
+            # Create an essential field
+            essential_fields[item]['required'] = True
+        else:
+            essential_fields[item] = {'required': False}
+
     return essential_fields
 
 def extract_step_from_las(las):
@@ -50,3 +56,10 @@ def extract_step_from_las(las):
 
     # due to floating point errors we will round it to 3 decimal places and find the uniqe value
     return stats.mode(np.round(intervals, 3))[0][0]
+
+def get_curve_metadata(yaml_file):
+    settings = yaml.safe_load(open(yaml_file))['curve_fields']
+    for field in settings:
+        if not 'delete' in settings[field].keys():
+            settings[field]['delete'] = False
+    return settings

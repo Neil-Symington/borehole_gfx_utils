@@ -1,9 +1,9 @@
 metadata_fields:
   # Define metadata fields that we expect each las file to contain. These are described in this document
   # https://www.cwls.org/wp-content/uploads/2017/02/Las2_Update_Feb2017.pdf on page 5
-  "STRT": {"required": True, dtype: "float", format: "{:.3f}", unit: "metres", description: "start logging depth"}
-  "STOP": {"required": True, dtype: "float", format: "{:.3f}", unit: "metres", description: "stop logging depth"}
-  "STEP": {"required": True, dtype: "float", format: "{:.2f}", unit: "metres", description: "logging interval"}
+  "STRT": {"required": True, dtype: "float", format: "{:.4f}", unit: "metres", description: "start logging depth"}
+  "STOP": {"required": True, dtype: "float", format: "{:.4f}", unit: "metres", description: "stop logging depth"}
+  "STEP": {"required": True, dtype: "float", format: "{:.4f}", unit: "metres", description: "logging interval"}
   "NULL": {"required": True, dtype: ["float", "int"], description: "null value"}
   "COMP": {"required": True, dtype: "str", description: "logging company"}
   "WELL": {"required": True, dtype: "str", use_col: "BOREHOLE_NAME", description: "borehole name"}
@@ -18,16 +18,28 @@ metadata_fields:
   "LMF": {"required": True, dtype: "str", use_col: "DEPTH_REFERENCE_TYPE", description: "Log Measured From"}
   "APD": {"required": True, dtype: "float", format: "{:.3f}", use_col: "Reference_datum_height_(mAGL)", unit: "m",
           description: "Above Permanent Datum"}
-  "EPD": {"required": True, dtype: "float", format: "{:.1f}", use_col: "ground_elevation_(mAHD)", unit: "mAHD",
+  "EPD": {"required": True, dtype: "float", format: "{:.1f}", use_col: "ground_elevation_(mAHD)", unit: "m",
           description: "Elevation of Permanant Datum"}
   "PDAT": {"required": True, dtype: "str", use_col: "vertical_datum", description: "Permanent datum"}
   "STAT": {"required": True, dtype: "str", use_col: "STATE"} # Country
   "CTRY": {"required": True, dtype: "str", use_col: "COUNTRY"} # State
-  "SRVC": {"required": True, dtype: "str", use_col: "SRVC"}
-  "FLD": {"required": True, dtype: "str", use_col: "FLD"}
+  "SRVC": {"required": False, dtype: "str", use_col: "SRVC"}
+  "LOC": {"required": True, dtype: "str", use_col: "LOC"}
+  "FLD": {"required": False, dtype: "str", use_col: "FLD"}
 
 instruments:
   "A034": {instrument_name: "A034 Induction Conductivity Probe", channel_offset: [0.6], log_type: "induction"}
   "HII-383": {instrument_name: "HII-383 Induction Conductivity Probe", channel_offset: [0.4, 0.6], log_type: "induction"}
   "A031": {instrument_name: "A031 Natural Gamma Probe", log_type: "gamma"}
   "QL40": {instrument_name: "QL40 SGR Spectral Gamma Probe", log_type: "gamma"}
+
+curve_fields:
+  INDUCTION_CALIBRATED: {field_name: 'CONDUCTIVITY', descr: 'Apparent conductivity', unit: 'mS/m'}
+  INDUCTION: {field_name: 'CONDUCTIVITY', descr: 'Apparent conductivity', unit: 'mS/m'}
+  DEEP_INDUCTION: {field_name: 'DEEP_CONDUCTIVITY', descr: 'Deep channel apparent conductivity', unit: 'mS/m'}
+  MEDIUM_INDUCTION: {field_name: 'MEDIUM_CONDUCTIVITY', descr: 'Medium channel apparent conductivity', unit: 'mS/m'}
+  IND_RES: {delete: True}
+  DEEP_RES: {delete: True}
+  MEDIUM_RES: {delete: True}
+  GAMMA_CALIBRATED: {field_name: 'NATURAL_GAMMA', descr: 'Raw gamma counts', unit: 'cps'}
+  GR: {field_name: 'NATURAL_GAMMA', descr: 'Calibrated natural gamma', unit: 'API'}

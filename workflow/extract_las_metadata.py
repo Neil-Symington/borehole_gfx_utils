@@ -58,9 +58,9 @@ for index, row in df_master.iterrows():
             except AttributeError:
                 pass
         # Calculate the step from the log data since this metadata field is seemingly always wrong
-        step = extract_step_from_las(las)
-        column = "_".join(["STEP", s])
-        df_master.at[index, column] = step
+        #step = extract_step_from_las(las)
+        #column = "_".join(["STEP", s])
+        #df_master.at[index, column] = step
 
 
 # Delete any empty columns
