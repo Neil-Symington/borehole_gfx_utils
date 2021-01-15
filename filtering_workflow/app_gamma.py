@@ -65,25 +65,24 @@ def run_filter(series, window, min_periods, filter_name):
 def lasfile2df(lasfile):
     df = lasio.read(lasfile).df()
     df = df.dropna(how = 'all')
-    df = df * (1 / 1000.) # convert to S/m
-    df = df.apply(np.log10) # apply logarithmic transform
     return df
 
 
 def row2filter_vars(df, row_number, get_frame = True):
     # create a single row dataframe
     row = df.iloc[row_number]
+
     # get our values
-    lasfile = row['induction_path']
+    lasfile = row['gamma_path']
     # now get the log names
     logs = row['Columns'].split(',')
     # create an options dictionary for the dropdownmenu
     log_options = []
     for log in logs:
         log_options.append({'label': log, 'value': log})
-    filters = [row['filter1'], row['filter2']]
-    minimum_windows = [row['filter1_min_window'], row['filter2_min_window']]
-    filter_windows = [row['filter1_window_size'], row['filter2_window_size']]
+    filters = [row['fitler1']]
+    minimum_windows = [row['filter1_min_window']]
+    filter_windows = [row['filter1_window_size']]
     resampling_interval = row['sampling_interval']
 
     df = lasfile2df(lasfile)[logs].dropna(how='any')
@@ -112,9 +111,9 @@ def find_trigger():
         trig_id = None
     return trig_id
 
-df_master = pd.read_csv('EFTF_induction_filtering_master.csv')
+df_master = pd.read_csv('EFTF_gamma_filtering_master.csv')
 
-outdir = r"\\prod.lan\active\proj\futurex\Common\Working\Neil\filtered_borehoel_gfx\induction"
+outdir = r"\\prod.lan\active\proj\futurex\Common\Working\Neil\filtered_borehoel_gfx\gamma"
 
 if not os.path.exists(outdir):
     os.mkdir(outdir)
@@ -193,20 +192,9 @@ app.layout = html.Div([
             step=1,
             value=init_params['filter_windows'][0],
         ),
-        dcc.Slider(
-            id='filter-size_2',
-            min=5,
-            max=55,
-            step=1,
-            value=init_params['filter_windows'][1],
-        ),
         html.Div(["Filter 1 minimum window: ", dcc.Input(
             id="min_window_1", type="number",
             min=1, max=33, value=5)],
-                           className='row'),
-        html.Div(["Filter 2 minimum window: ", dcc.Input(
-                    id="min_window_2", type="number",
-                      min=1, max=33, value=5)],
                            className='row'),
 
         html.Div(id='filter-output', style={'margin-top': 20})
@@ -264,9 +252,8 @@ def export_results(nclicks, filtered_logs, filtered_params, log_plot, log):
         well_name = filtered_params['well']
         df_las = pd.DataFrame(index=filtered_logs['index'], data=filtered_logs['data'],
                               columns=filtered_logs['columns'])
-        df_las['filtered_S/m'] = 10**df_las['filtered'].values
         # Write the log to a csv
-        df_las['filtered_S/m'].to_csv(os.path.join(outdir, 'data', '_'.join([well_name, log, 'filtered.csv'])))
+        df_las['filtered'].to_csv(os.path.join(outdir, 'data', '_'.join([well_name, log, 'filtered.csv'])))
         # Write the image to a html
         write_html(log_plot,os.path.join(outdir, 'html', '_'.join([well_name, log, 'filtered.html'])))
         # Write the metadata to a file
@@ -275,6 +262,7 @@ def export_results(nclicks, filtered_logs, filtered_params, log_plot, log):
                     'filter_windows': ','.join([str(n) for n in filtered_params['filter_windows']]),
                     'min_windows': ','.join([str(n) for n in filtered_params['min_windows']]),
                     'min_depth': filtered_params['min_depth'], 'max_depth': filtered_params['max_depth']}
+
         pd.DataFrame(metadata, index = [0]).to_csv(os.path.join(outdir, 'metadata',
                                                                 '_'.join([well_name, log, 'metadata.csv'])),
                                                    index = False)
@@ -293,14 +281,12 @@ def export_results(nclicks, filtered_logs, filtered_params, log_plot, log):
               [Input("min_depth", 'value'),
                Input("max_depth", 'value'),
                Input('filter-size_1', 'value'),
-               Input('filter-size_2', 'value'),
                Input('log-dropdown', 'value'),
                Input("min_window_1", 'value'),
-               Input("min_window_2", 'value'),
                Input('initial_params', 'data')],
                [State('filtering_params', 'data'),
                 State('raw_logs', 'data')])
-def render_log(min_depth, max_depth, filter_window_1, filter_window_2, log, min_window_1, min_window_2,
+def render_log(min_depth, max_depth, filter_window_1, log, min_window_1,
                initial_params, filtering_params, raw_logs):
     trig_id = find_trigger()
     print(trig_id)
@@ -322,30 +308,22 @@ def render_log(min_depth, max_depth, filter_window_1, filter_window_2, log, min_
         log = log
     else:
         log = params['logs'][0]
-    # Update our params with the call back values. These should always be
-    params['filter_windows'][0] = filter_window_1
 
-    params['filter_windows'][1] = filter_window_2
-
-    params['min_windows'][0] = min_window_1
-
-    params['min_windows'][1] = min_window_2
-
-    filter_windows = params['filter_windows']
     fig = make_subplots(rows=1, cols=1)
 
     depths = df_las.index.values
 
-    values = 10**df_las[log]
+    values = df_las[log]
 
-    fig = fig.add_trace(go.Scatter(y=depths,x=values, mode= "lines", name = log + " unfiltered"), row = 1, col = 1)
-    fig.update_yaxes(autorange='reversed', row=1,col=1)
+    fig = fig.add_trace(go.Scatter(y=depths,x=values, mode= "lines", name = log + " unfiltered"),
+                        row = 1, col = 1)
+    fig.update_yaxes(autorange='reversed',
+                     row=1,col=1)
 
     df_las['filtered'] = df_las[log].copy()
 
-    for i, item in enumerate(params['filter_names']):
-        df_las['filtered'] = run_filter(df_las['filtered'], filter_windows[i],
-                                        params['min_windows'][i], item)
+    df_las['filtered'] = run_filter(df_las['filtered'], filter_window_1,
+                                    min_window_1, params['filter_names'][0])
 
     # plot 2 will be the filtered trace
     depth_mask = (depths > min_depth) & (depths < max_depth)
@@ -354,36 +332,38 @@ def render_log(min_depth, max_depth, filter_window_1, filter_window_2, log, min_
 
     # Finally we resample
     sampling_interval = stats.mode(depths[1:] - depths[:1])[0][0]
+
     # now find the resamping factor
     n = np.ceil(params['resampling_interval'] / sampling_interval).astype(np.int)
 
     df_downsampled = df_las.dropna().iloc[::n]
 
-    filtered_values = 10**df_downsampled['filtered'].values
+    print(df_downsampled)
+
+    filtered_values = df_downsampled['filtered'].values
 
     fig.add_trace(go.Scatter(y=df_downsampled.index, x=filtered_values,
                              mode= "lines", name = log + " filtered"),
                   row = 1, col = 1, )
-    fig.update_xaxes(type="log", title_text= "Conductivity (S/m)")
+
+    fig.update_xaxes(title_text= "gamma measurement")
     fig.update_yaxes(title_text="depth (m below reference datum)")
     fig['layout'].update({'uirevision': initial_params})
 
     filter_msg = "Filter used were {} with a filter window of {}".format(', '.join(params['filter_names']),
-                                                                         ', '.join([str(x) for x in filter_windows]))
+                                                                         ', '.join([str(x) for x in params['filter_windows']]))
 
     clipper_msg = "Data above {} m and below {} m depth have been clipped".format(str(np.round(min_depth, 2)),
                                                                                   str(np.round(max_depth, 2)))
 
     filtered_params = {'lasfile': params['lasfile'], 'min_depth': min_depth, 'min_windows': params['min_windows'],
                        'max_depth': max_depth, 'log': log, 'filter_names': params['filter_names'],
-                       'filter_windows': filter_windows, 'well': params['well'], 'logs': params['logs'],
+                       'filter_windows': params['filter_windows'], 'well': params['well'], 'logs': params['logs'],
                        'resampling_interval': params['resampling_interval']}
 
     filtered_logs = df_downsampled.to_dict('split')
 
     return [fig, filter_msg, clipper_msg, filtered_params, filtered_logs]
 
-
-
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
