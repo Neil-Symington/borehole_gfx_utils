@@ -215,7 +215,7 @@ app.layout = html.Div([
                Output('max_depth', 'min'),
                Output('max_depth', 'max'),
                Output('max_depth', 'value'),
-                Output('log-dropdown', 'value'),
+               Output('log-dropdown', 'value'),
                Output('log-dropdown', 'options')
                ],
               [Input('master_table', "derived_virtual_selected_rows")])
@@ -307,7 +307,7 @@ def render_log(min_depth, max_depth, filter_window_1, log, min_window_1,
     if trig_id == "log-dropdown.value":
         log = log
     else:
-        log = params['logs'][0]
+        log = log#params['logs'][0]
 
     fig = make_subplots(rows=1, cols=1)
 
@@ -337,8 +337,6 @@ def render_log(min_depth, max_depth, filter_window_1, log, min_window_1,
     n = np.ceil(params['resampling_interval'] / sampling_interval).astype(np.int)
 
     df_downsampled = df_las.dropna().iloc[::n]
-
-    print(df_downsampled)
 
     filtered_values = df_downsampled['filtered'].values
 
