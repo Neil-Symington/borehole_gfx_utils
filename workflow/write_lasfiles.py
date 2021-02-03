@@ -115,6 +115,7 @@ for index, row in df_master.iterrows():
         field_name = field.mnemonic
         if field_name in curve_metadata.keys():
             if curve_metadata[field_name]['delete']:
+                print(las_path)
                 del las.curves[field_name]
                 continue
             else:
@@ -127,4 +128,4 @@ for index, row in df_master.iterrows():
 
     outfile = os.path.join(outdir, "_".join([row['WELL'], log + ".las"]))
     las.write(outfile, version = 2.0, STEP = np.round(float(row['STEP_' + log]),3), column_fmt =column_fmt,
-              wrap=True)
+              wrap=False)

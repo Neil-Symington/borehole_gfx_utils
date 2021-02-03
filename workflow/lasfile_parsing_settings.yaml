@@ -28,18 +28,18 @@ metadata_fields:
   "FLD": {"required": False, dtype: "str", use_col: "FLD"}
 
 instruments:
-  "A034": {instrument_name: "A034 Induction Conductivity Probe", channel_offset: [0.6], log_type: "induction"}
-  "HII-383": {instrument_name: "HII-383 Induction Conductivity Probe", channel_offset: [0.4, 0.6], log_type: "induction"}
-  "A031": {instrument_name: "A031 Natural Gamma Probe", log_type: "gamma"}
-  "QL40": {instrument_name: "QL40 SGR Spectral Gamma Probe", log_type: "gamma"}
+  "A034 Induction Conductivity Probe": {instrument_name: "A034 Induction Conductivity Probe", channel_offset: [0.6], log_type: "induction"}
+  "HII-383 Induction Conductivity Probe": {instrument_name: "HII-383 Induction Conductivity Probe", channel_offset: [0.4, 0.6], log_type: "induction"}
+  "A031 Natural Gamma Probe": {instrument_name: "A031 Natural Gamma Probe", log_type: "gamma"}
+  "QL40 SGR Spectral Gamma Probe": {instrument_name: "QL40 SGR Spectral Gamma Probe", log_type: "gamma"}
 
 curve_fields:
   INDUCTION_CALIBRATED: {field_name: 'CONDUCTIVITY', descr: 'Apparent conductivity', unit: 'mS/m'}
   INDUCTION: {field_name: 'CONDUCTIVITY', descr: 'Apparent conductivity', unit: 'mS/m'}
   DEEP_INDUCTION: {field_name: 'DEEP_CONDUCTIVITY', descr: 'Deep channel apparent conductivity', unit: 'mS/m'}
   MEDIUM_INDUCTION: {field_name: 'MEDIUM_CONDUCTIVITY', descr: 'Medium channel apparent conductivity', unit: 'mS/m'}
-  IND_RES: {delete: True}
-  DEEP_RES: {delete: True}
-  MEDIUM_RES: {delete: True}
+  IND_RES: {field_name: 'RESISTIVITY', descr: 'Reciprocal of apparent conductivity', unit: 'ohm.m'}
+  DEEP_RES: {field_name: 'DEEP_RESISTIVITY', descr: 'Reciprocal of deep channel apparent conductivity', unit: 'ohm.m'}
+  MEDIUM_RES: {field_name: 'MEDIUM_RESISTIVITY', descr: 'Reciprocal of medium channel apparent conductivity', unit: 'ohm.m'}
   GAMMA_CALIBRATED: {field_name: 'NATURAL_GAMMA', descr: 'Raw gamma counts', unit: 'cps'}
   GR: {field_name: 'NATURAL_GAMMA', descr: 'Calibrated natural gamma', unit: 'API'}
