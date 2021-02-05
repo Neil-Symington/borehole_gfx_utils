@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b502fc6f-acaa-48cf-a3f2-d8555d455e50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/filtering_workflow/conductivity_logs_to_bulk_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/filtering_workflow/gamma_logs_bulk_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/workflow/validate_conversion.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-836257448">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="26" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="28" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="7" />
+          <entry key="ipynb" value="4" />
+          <entry key="png" value="1" />
+          <entry key="py" value="38" />
+          <entry key="yaml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IPNB" value="4" />
+          <entry key="Image" value="1" />
+          <entry key="PLAIN_TEXT" value="7" />
+          <entry key="Python" value="38" />
+          <entry key="YAML" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="210" />
+          <entry key="dummy" value="170" />
+          <entry key="py" value="31035" />
+          <entry key="txt" value="390" />
+          <entry key="yaml" value="2121" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="560" />
+          <entry key="Python" value="31245" />
+          <entry key="YAML" value="2121" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filtering_workflow/gamma_logs_bulk_loader.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+              <folding>
+                <element signature="e#86#101#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions/get_construction_details.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow/extract_las_metadata.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="e#461#480#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow/get_spatial_metadata_from_oracle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2329">
+              <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/workflow_diagram.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow/lasfile_parsing_settings.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/filtering_workflow/app_gamma.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4964">
+              <caret line="306" column="31" selection-start-line="306" selection-start-column="19" selection-end-line="306" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow/write_lasfiles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="87" />
+              <folding>
+                <element signature="e#207#219#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/workflow/validate_conversion.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#91#103#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/workflow/EFTF_induction_gamma_master.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" selection-end-column="159" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>pdat</find>
+      <find>descr</find>
+      <find>bee</find>
+      <find>minimum_w</find>
+      <find>depth</find>
+      <find>dataframes</find>
+      <find>raw_log</find>
+      <find>style</find>
+      <find>filtered_logs</find>
+      <find>params</find>
+      <find>join</find>
+      <find>rows</find>
+      <find>render_log</find>
+      <find>filter</find>
+      <find>dropna</find>
+      <find>params['filter_names']</find>
+      <find>'filter_names'</find>
+      <find>filter1</find>
+      <find>filter_windows</find>
+      <find>log</find>
+      <find>update</find>
+      <find>filtered_</find>
+      <find>run_filter</find>
+      <find>print</find>
+      <find>raw_logs</find>
+      <find>log-dropdown</find>
+      <find>outdir</find>
+      <find>\\prod.lan\active\proj\futurex\East_Kimberley\Data\Original\Geophysics\Induction_gamma\2017_tfd_files_GA_ALT_system\17BP01I\17BP01I_induction_down_relogged.las</find>
+      <find>wrap</find>
+      <find>column_fmt</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="E:/Bores_working/compilation/notebooks/extract_bores_from_oracle.ipynb" />
+        <option value="$PROJECT_DIR$/check_borehole_collar_z.py" />
+        <option value="$PROJECT_DIR$/get_borehole_metadata_from_oracle.py" />
+        <option value="$PROJECT_DIR$/get_metadata_from_oracle.py" />
+        <option value="$PROJECT_DIR$/correct_las_metadata.py" />
+        <option value="$PROJECT_DIR$/temp_table_join.py" />
+        <option value="$PROJECT_DIR$/functions/data_handling.py" />
+        <option value="$PROJECT_DIR$/get_spatial_metadata_from_oracle.py" />
+        <option value="$PROJECT_DIR$/merge_metadata_tables.py" />
+        <option value="$PROJECT_DIR$/lasfile_required_fields.yaml" />
+        <option value="$PROJECT_DIR$/write_lasfiles.py" />
+        <option value="$PROJECT_DIR$/workflow/merge_metadata_tables.py" />
+        <option value="$PROJECT_DIR$/workflow/post_processing.py" />
+        <option value="$PROJECT_DIR$/workflow/get_construction_details.py" />
+        <option value="$PROJECT_DIR$/workflow/extract_las_metadata.py" />
+        <option value="$PROJECT_DIR$/functions/utilities.py" />
+        <option value="$PROJECT_DIR$/workflow/temp.py" />
+        <option value="$PROJECT_DIR$/workflow/get_spatial_metadata_from_oracle.py" />
+        <option value="$PROJECT_DIR$/filtering_workflow/collect_curves.py" />
+        <option value="$PROJECT_DIR$/filtering_workflow/app.py" />
+        <option value="$PROJECT_DIR$/filtering_workflow/bgfx_logs_to_bulk_loader.py" />
+        <option value="$PROJECT_DIR$/filtering_workflow/app_gamma.py" />
+        <option value="$PROJECT_DIR$/filtering_workflow/EFTF1_gamma_bulk_loader.py" />
+        <option value="$PROJECT_DIR$/filtering_workflow/gamma_logs_bulk_loader.py" />
+        <option value="$PROJECT_DIR$/functions/temp_file.py" />
+        <option value="$PROJECT_DIR$/workflow/lasfile_parsing_settings.yaml" />
+        <option value="$PROJECT_DIR$/workflow/write_lasfiles.py" />
+        <option value="$PROJECT_DIR$/workflow/validate_conversoin.py" />
+        <option value="$PROJECT_DIR$/workflow/validate_conversion.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="267" />
+    <option name="y" value="-846" />
+    <option name="width" value="1292" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="borehole_gfx_utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borehole_gfx_utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borehole_gfx_utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borehole_gfx_utils" type="462c0819:PsiDirectoryNode" />
+              <item name="filtering_workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borehole_gfx_utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borehole_gfx_utils" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borehole_gfx_utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borehole_gfx_utils" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="borehole_gfx_utils" type="b2602c69:ProjectViewProjectNode" />
+              <item name="borehole_gfx_utils" type="462c0819:PsiDirectoryNode" />
+              <item name="workflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\u77932\Documents\github\borehole_gfx_utils\functions" />
+      <recent name="C:\Users\u77932\Documents\github\borehole_gfx_utils\workflow" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\u77932\Documents\github\borehole_gfx_utils\filtering_workflow" />
+      <recent name="C:\Users\u77932\Documents\github\borehole_gfx_utils" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b502fc6f-acaa-48cf-a3f2-d8555d455e50" name="Default Changelist" comment="" />
+      <created>1606430891105</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606430891105</updated>
+    </task>
+    <task id="LOCAL-00001" summary="cleaned up file names, restructure and hopefully finalise">
+      <created>1606954048140</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606954048141</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add script using sql query to extract the constuction information">
+      <created>1608268228914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608268228914</updated>
+    </task>
+    <task id="LOCAL-00003" summary="I am committed to the commit">
+      <created>1608615915120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608615915120</updated>
+    </task>
+    <task id="LOCAL-00004" summary="wrangling the dash app">
+      <created>1608703432528</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608703432528</updated>
+    </task>
+    <task id="LOCAL-00005" summary="removed problematic slider and oh boy what a difference">
+      <created>1608782820255</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608782820255</updated>
+    </task>
+    <task id="LOCAL-00006" summary="did the filtering">
+      <created>1610692089479</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610692089479</updated>
+    </task>
+    <task id="LOCAL-00007" summary="did the gamma filtering">
+      <created>1610944948889</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610944948889</updated>
+    </task>
+    <task id="LOCAL-00008" summary="some minor changes in handling curves and wrapping output las files">
+      <created>1612312878211</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1612312878211</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17017913" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49420443" weight="0.329718" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49736565" weight="0.329718" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49578503" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.47102213" visible="true" weight="0.20607375" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5289779" side_tool="true" visible="true" weight="0.20607375" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.487882" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="cleaned up file names, restructure and hopefully finalise" />
+    <MESSAGE value="add script using sql query to extract the constuction information" />
+    <MESSAGE value="I am committed to the commit" />
+    <MESSAGE value="wrangling the dash app" />
+    <MESSAGE value="removed problematic slider and oh boy what a difference" />
+    <MESSAGE value="did the filtering" />
+    <MESSAGE value="did the gamma filtering" />
+    <MESSAGE value="some minor changes in handling curves and wrapping output las files" />
+    <option name="LAST_COMMIT_MESSAGE" value="some minor changes in handling curves and wrapping output las files" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://E:/Bores_working/compilation/notebooks/extract_bores_from_oracle.ipynb" />
+    <entry file="file:////prod.lan/active/proj/futurex/StuartCorridor/Working/SharedWorkspace/Borehole_GFX_filtering/2019_IG_filtering/notebooks/extract_bores_from_oracle.ipynb" />
+    <entry file="file://$PROJECT_DIR$/EFTF_induction_master.csv" />
+    <entry file="file://C:/W10DEV/Anaconda3/envs/borehole_gfx/Lib/site-packages/lasio/las_items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="24" column="32" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp_table_join.py" />
+    <entry file="file://$PROJECT_DIR$/workflow/EK_metadata_check_results.csv" />
+    <entry file="file://$PROJECT_DIR$/workflow/post_processing.py" />
+    <entry file="file://$PROJECT_DIR$/workflow/EFTF_induction_gamma_metadata_all_corrected.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="138" lean-forward="true" selection-start-column="138" selection-end-column="138" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/check_las_metadata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/check_borehole_collar_z.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="132" column="41" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/collect_curves.py" />
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/EFTF_induction_filtering_master.csv" />
+    <entry file="file://$PROJECT_DIR$/workflow/temp.py" />
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/EFTF1_conductivity_bulk_loader.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/EFTF1_gamma_bulk_loader.py" />
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5627">
+          <caret line="345" column="51" selection-start-line="345" selection-start-column="29" selection-end-line="345" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/conductivity_logs_to_bulk_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" column="30" selection-end-line="50" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/temp_file.py" />
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/gamma_logs_bulk_loader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+          <folding>
+            <element signature="e#86#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/get_construction_details.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/extract_las_metadata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#461#480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/get_spatial_metadata_from_oracle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/workflow_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filtering_workflow/app_gamma.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4964">
+          <caret line="306" column="31" selection-start-line="306" selection-start-column="19" selection-end-line="306" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/EFTF_induction_gamma_master.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" selection-end-column="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/write_lasfiles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="87" />
+          <folding>
+            <element signature="e#207#219#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/lasfile_parsing_settings.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/validate_conversion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#91#103#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
