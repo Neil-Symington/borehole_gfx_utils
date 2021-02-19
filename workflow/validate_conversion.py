@@ -9,10 +9,10 @@ sys.path.append(r"C:\Users\u77932\Documents\github\borehole_gfx_utils\functions"
 from utilities import get_curve_metadata
 
 root = r"C:\Users\u77932\Documents\github\borehole_gfx_utils\workflow"
-infile = os.path.join(root, "EFTF_induction_gamma_metadata_all_corrected.csv")
+infile = os.path.join(root, "EFTF_induction_gamma_metadata_all_corrected_.csv")
 
-log = "induction"
-#log = "gamma"
+#log = "induction"
+log = "gamma"
 
 outfile = os.path.join(root, "".join(["EFTF_", log, "_validation.csv"]))
 
@@ -78,7 +78,7 @@ def dict2dataframe(dictionary, dataframe, ind):
 # Iterate through df_valid and check the curves
 
 for index, row in df_valid.iterrows():
-    if row['WELL'] == "RN017536":
+    if row['WELL'] == "RN017536" or row['WELL'] == "RN019449" or row["WELL"] == "RN019678":
         continue
     df_las1 = lasio.read(row[log + '_path']).df()
     df_las2 = lasio.read(row["clean_path"]).df()
@@ -99,4 +99,4 @@ for index, row in df_valid.iterrows():
         var_results = extract_statistics(arr1, arr2, var)
         # add to dataframe
         df_valid = dict2dataframe(var_results, df_valid, index)
-    df_valid.to_csv(r"C:\temp\validation_test.csv")
+    df_valid.to_csv(r"C:\temp\validation_gamma.csv")

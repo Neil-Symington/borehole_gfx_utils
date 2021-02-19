@@ -12,6 +12,8 @@ from utilities import get_essential_fields, get_instrument_metadata, get_curve_m
 #log = "induction"
 log = "gamma"
 
+multirun_bores = ["RN017536", "RN019449", "RN019678"]
+
 # load the required fields from the yaml file
 yaml_file = "lasfile_parsing_settings.yaml"
 
@@ -36,6 +38,9 @@ essential_fields = get_essential_fields(yaml_file, log)
 for index, row in df_master.iterrows():
     path = "_".join([log, "path"])
     las_path = row[path]
+    well = row['WELL']
+    if not well in multirun_bores:
+        continue
     # Check that the file path exists as there are sum nulls
     if os.path.isfile(las_path):
         las = lasio.read(las_path)
@@ -125,7 +130,11 @@ for index, row in df_master.iterrows():
                 las.curves[new_field].descr = curve_metadata[field_name]['descr'].upper()
         else:
             pass
-
     outfile = os.path.join(outdir, "_".join([row['WELL'], log + ".las"]))
+    # To deal with multirun files
+    if well in multirun_bores:
+        top_depth = str(np.round(np.min(df.index.values),3))
+        bottom_depth = str(np.round(np.max(df.index.values),1))
+        outfile = outfile.replace('.las', '_'.join([top_depth, "to", bottom_depth, 'm_depth.las']))
     las.write(outfile, version = 2.0, STEP = np.round(float(row['STEP_' + log]),3), column_fmt =column_fmt,
               wrap=False)
