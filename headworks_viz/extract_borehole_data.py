@@ -39,8 +39,6 @@ select
    e.geom_original.sdo_point.z as orig_z,
    e.geom_original.sdo_srid as orig_srid,
    sum.ENO,
-   sum.COUNTRY,
-   sum.STATE,
    sum.ELEVATION_VALUE,
    sum.INPUT_UNCERTAINTY_Z,
    sum.ELEVATION_UOM,
@@ -54,6 +52,7 @@ select
    sum.LOCATION_METHOD,
    sum.GDA94_LONGITUDE,
    sum.GDA94_LATITUDE,
+   sum.PREFERRED_TD_M,
    crs.SRID,
    crs.COORD_REF_SYS_NAME,
    drt.DEPTH_REFERENCE_TYPE_ID
@@ -82,6 +81,7 @@ or
 
 df_header = pd.read_sql_query(header_query, con = ora_con)
 
+# if the alternate name is the same as the name we get duplicates
 df_header.drop_duplicates(inplace = True)
 
 # We also want to tranform all bore into their projected coordinate system. As all bores are either zone 52 and 53
@@ -103,6 +103,7 @@ df_header['projected_crs'] = ''
 df_header['easting'] = np.nan
 df_header['northing'] = np.nan
 df_header['geographic_crs'] = "GDA94"
+print(df_header)
 # Iterate through the frame and make the transform
 for index, row in df_header.iterrows():
     x, y = np.float64(row['GDA94_LONGITUDE']), np.float64(row['GDA94_LATITUDE'])
@@ -122,7 +123,8 @@ for index, row in df_header.iterrows():
         crs = "GDA94 / MGA zone 56"
 
     x_proj, y_proj = transformers_from_GDA94[crs].transform(x,y)
-    df_header.at[index, ['easting', 'northing']] = [x_proj, y_proj]
+    df_header.at[index, 'easting'] = x_proj
+    df_header.at[index, 'northing'] = y_proj
     df_header.at[index,'projected_crs'] = crs
 
 
