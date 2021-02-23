@@ -4,10 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/headworks_viz/extract_borehole_data.py" line="136" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b502fc6f-acaa-48cf-a3f2-d8555d455e50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py" afterDir="false" />
-    </list>
+    <list default="true" id="b502fc6f-acaa-48cf-a3f2-d8555d455e50" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,70 +66,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/headworks_viz/extract_borehole_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2414">
-              <caret line="145" selection-start-line="145" selection-end-line="145" />
-              <folding>
-                <element signature="e#189#198#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workflow/get_spatial_metadata_from_oracle.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2244">
-              <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
-              <folding>
-                <element signature="e#262#281#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/headworks_viz/plot_shapefile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="1" selection-end-column="31" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/workflow_diagram.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workflow/lasfile_parsing_settings.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -552,9 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2244">
           <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -562,9 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="1" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -582,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
           <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
-          <folding>
-            <element signature="e#262#281#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

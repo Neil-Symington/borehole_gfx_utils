@@ -1,0 +1,589 @@
+BOREHOLE_NAME,BOREHOLE_ID,DEPTH_REFERENCE_ID,DEPTH_REFERENCE_TYPE_ID,INTERVAL_COLLECTION_ID,INTERVALNO,INTERVAL_BEGIN,INTERVAL_END,CONSTRUCTION_NAME,CONSTRUCTION_TYPE_ID,DESCRIPTION,TEXT,CODE,ORDERBY,NGIS_CODE,SOURCE,URI,ENTRYDATE,ENTEREDBY,UPDATEDBY,LASTUPDATE
+RN039890,635923,73074,3,31244,2128773,-0.7,5.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128774,-0.5,214.7,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128775,214.7,220.7,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128776,220.7,248.7,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128777,248.7,250.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128778,0.0,6.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128779,6.0,135.2,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128780,211.0,213.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128781,213.0,222.0,2-3 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128782,222.0,248.7,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN039890,635923,73074,3,31244,2128783,248.7,250.0,void fill,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128805,0.0,5.5,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128806,0.0,120.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128807,120.0,126.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128808,126.0,149.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128809,149.0,150.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128810,0.0,9.45,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128811,9.45,93.8,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128812,117.0,119.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128813,119.0,127.0,sandpack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128814,127.0,149.0,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040781,635921,73072,3,31247,2128815,149.0,150.0,void fill,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128816,0.0,5.6,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128817,0.0,85.8,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128818,85.8,91.8,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128819,91.8,97.8,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128820,97.8,110.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128821,0.0,5.6,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128822,5.6,82.9,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128823,82.9,84.9,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128824,84.9,92.0,sandpack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128825,92.0,97.8,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040782,635732,72955,3,31248,2128826,97.8,110.0,void fill,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128827,0.0,5.6,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128828,0.0,131.39,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128829,131.39,137.39,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128830,137.39,144.39,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128831,144.39,147.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128832,0.0,8.2,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128833,8.2,122.36,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128834,122.36,123.36,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128835,123.36,130.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128836,130.0,138.0,sandpack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128837,138.0,144.9,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040780,635744,72967,3,31249,2128838,144.39,147.0,void fill,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128855,0.0,6.0,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128856,0.0,124.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128857,130.0,146.63,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128858,124.0,130.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128859,146.63,150.1,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128860,0.0,11.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128861,11.0,110.0,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128862,119.0,122.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128863,122.0,146.63,10 mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040783,635736,72959,3,31251,2128864,146.63,150.1,void fill,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128870,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128871,-0.9,31.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128872,31.0,37.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128873,0.0,28.5,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128874,28.5,30.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128875,30.0,42.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040873,635728,72951,10,31253,2128876,37.0,42.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128877,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128878,-0.9,25.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128879,25.0,31.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128880,0.0,23.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128881,23.0,24.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128882,24.0,50.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040879,635729,72952,10,31254,2128883,31.0,50.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128891,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128892,-0.9,18.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128893,18.0,24.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128894,0.0,16.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128895,16.0,17.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128896,17.0,36.7,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040874,635733,72956,10,31256,2128897,24.0,36.7,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128898,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128899,-0.9,29.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128900,29.0,35.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128901,0.0,27.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128902,27.0,28.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128903,28.0,41.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040877,635734,72957,10,31257,2128904,35.0,41.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128905,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128906,-0.9,36.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128907,36.0,42.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128908,0.0,32.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128909,32.0,34.5,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128910,34.5,47.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040878,635735,72958,10,31258,2128911,42.0,47.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128912,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128913,-0.9,29.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128914,29.0,35.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128915,0.0,23.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128916,23.0,25.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128917,25.0,41.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040884,635737,72960,3,31259,2128918,35.0,41.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128919,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128920,-0.9,39.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128921,39.0,45.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128922,0.0,34.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128923,34.0,36.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128924,36.0,50.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040883,635738,72961,3,31260,2128925,45.0,50.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128926,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128927,-0.9,29.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128928,29.0,35.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128929,0.0,27.5,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128930,27.5,28.2,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128931,28.2,44.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040881,635739,72962,3,31261,2128932,35.0,44.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128933,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128934,-0.9,17.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128935,17.0,23.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128936,0.0,8.5,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128937,8.5,10.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128938,10.0,44.5,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040882,635740,72963,3,31262,2128939,23.0,44.5,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128940,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128941,-0.6,20.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128942,20.0,26.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128943,0.0,18.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128944,18.0,19.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128945,19.0,41.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040876,635741,72964,10,31263,2128946,26.0,41.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128947,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128948,-0.9,29.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128949,29.0,35.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128950,0.0,26.5,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128951,26.5,27.5,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128952,27.5,43.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN040875,635742,72965,10,31264,2128953,35.0,43.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128979,-0.9,20.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128980,20.0,26.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128981,0.0,17.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128982,17.0,19.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128983,19.0,41.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128984,26.0,41.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128986,-0.9,11.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128987,11.0,17.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128988,0.0,9.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128989,9.0,10.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128990,10.0,32.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128991,17.0,32.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128993,-0.9,12.0,casing,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128994,12.0,18.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128995,0.0,10.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128996,10.0,11.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128997,11.0,29.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2128999,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129000,-1.0,272.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129002,290.0,293.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129003,293.0,297.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129004,0.0,10.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129005,10.0,260.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129006,260.0,268.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129007,268.0,293.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129008,293.0,297.0,2mm gravel pack,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129009,-1.0,6.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129011,76.0,82.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129012,82.0,88.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129013,88.0,97.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129014,0.0,12.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129015,12.0,68.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129016,68.0,88.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129017,88.0,97.0,2mm gravel pack,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129019,-1.0,90.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129020,90.0,96.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129021,96.0,156.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129022,156.0,161.8,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129023,0.0,7.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129024,7.0,80.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129025,80.0,82.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129026,82.0,96.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129027,96.0,98.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129028,98.0,140.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129029,140.0,156.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129030,156.0,161.8,unknown,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129031,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129032,-1.0,230.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129033,230.0,240.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129034,240.0,290.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129035,290.0,298.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129036,0.0,5.8,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129037,5.8,215.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129038,215.0,220.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129039,220.0,258.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129040,258.0,290.0,6mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019452,636119,79013,3,31274,2129041,290.0,298.0,6mm gravel pack,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129042,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129043,-1.0,48.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129044,48.0,54.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129045,54.0,57.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129046,57.0,110.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129047,0.0,5.8,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129048,5.8,44.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129049,44.0,46.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129050,46.0,56.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129051,56.0,57.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019453,636117,79016,3,31275,2129052,57.0,110.0,unknown,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129053,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129054,-0.9,86.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129055,86.0,92.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129056,92.0,93.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129057,93.0,99.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129058,0.0,5.8,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129059,5.8,24.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129060,24.0,25.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129061,25.0,76.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129062,76.0,81.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129063,81.0,93.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019454,636116,78992,3,31276,2129064,93.0,99.0,2mm gravel pack,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129065,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129066,-0.9,66.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129067,66.0,72.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129068,72.0,92.8,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129069,0.0,33.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129070,33.0,58.0,backfill,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129071,58.0,60.5,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019455,636303,79018,3,31277,2129072,60.5,92.8,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129073,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129074,-0.9,73.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129075,73.0,79.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129076,79.0,81.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129077,81.0,83.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129078,0.0,5.8,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129079,5.8,67.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129080,67.0,70.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129081,70.0,81.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019456,636219,78991,3,31278,2129082,81.0,83.0,2mm gravel pack,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129083,-1.0,5.8,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129084,-0.9,67.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129085,67.0,73.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129086,73.0,75.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129087,75.0,78.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129088,0.0,5.8,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129089,5.8,54.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129090,54.0,58.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129091,58.0,75.0,2mm gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019457,636220,79017,3,31279,2129092,75.0,78.0,2mm gravel pack,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129093,-0.3,52.84,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129094,-0.3,216.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129095,204.0,210.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129096,210.0,216.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129097,216.0,220.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129098,0.0,5.7,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129099,5.7,216.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019673,637299,75083,3,31280,2129100,216.0,220.0,unknown,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129101,-1.0,5.7,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129102,-0.05,112.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129103,112.0,132.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129104,132.0,246.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129105,246.0,250.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129106,0.0,6.0,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129107,6.0,106.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129108,106.0,110.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129109,110.0,112.6,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129110,112.6,246.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019674,636300,78971,3,31281,2129111,246.0,250.0,unknown,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129118,-0.3,5.7,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129119,-0.3,158.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129120,158.0,164.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129121,164.0,167.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129122,167.0,170.7,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129123,0.0,5.7,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129124,5.7,154.0,open hole,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129125,154.0,156.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129126,156.0,167.0,1mm sand,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019676,636120,79014,3,31283,2129127,167.0,170.7,1mm sand,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129128,-0.31,5.7,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129129,0.0,183.7,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129130,183.7,189.7,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129131,189.7,201.7,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129132,201.7,218.9,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129133,0.0,5.7,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129134,5.7,172.0,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129135,172.0,178.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129136,178.0,180.0,bentonite,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129137,180.0,201.0,gravel pack,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129138,201.0,201.7,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019678,636301,79019,3,31284,2129139,201.7,218.9,unknown,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+KR54,635747,72970,3,31268,2128978,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+KR55,635748,72971,3,31269,2128985,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128992,-1.0,0.3,casing protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+KR58,635749,72972,3,31270,2128998,18.0,29.0,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019449,636124,79015,3,31271,2129001,272.0,290.0,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019450,636118,79012,3,31272,2129010,-1.0,76.0,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019451,636122,79011,3,31273,2129018,-1.0,7.0,protector,4,"Fittings used to protect the borehole from damage (eg, casing); recommended minimum casing standard.",protection,protection,4,PROT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/protection,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032483,0.0,5.6,protector,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032484,0.0,69.9,lining,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032485,0.0,5.6,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032486,5.6,34.91,unknown,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032487,34.91,36.38,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032488,36.38,57.8,10mm gravel,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032489,57.8,66.46,cement,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032490,66.46,66.73,bentonite pellets,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032491,66.73,70.7,2mm sand,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032492,69.9,75.9,screen,2,"Part of a borehole construction that allows intake of groundwater (eg, screen and slotted casing).",inlet,inlet,2,INLT,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/inlet,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032493,70.7,79.9,gravel,1,"Fill within the annulus between the lining and the surrounding geological material (eg, gravel pack, seal and grout).",annulus fill,"annulus_fill
+",1,AFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/annulus_fill,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032494,75.9,79.9,sump,3,"Material inserted to line the inside of the void (eg, casing and pipe).",lining,lining,3,LIN,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/lining,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032495,79.9,184.0,void,5,A hole excavated to intercept groundwater.,void,void,5,VOIC,National Groundwater Information System (NGIS),http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void,2016-08-16 11:03:57,BOREHOLE_A,,
+RN019680,641106,79037,3,31286,7032496,79.9,184.0,void fill,6,"Material reinserted inside the void or existing lining (eg, backfill and packer).",void fill,void_fill,6,VFIL,"National Groundwater Information System (NGIS)
+",http://resource.geoscience.gov.au/classifier/ngis/constructiontype/void_fill,2016-08-16 11:03:57,BOREHOLE_A,,
