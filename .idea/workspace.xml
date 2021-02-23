@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/headworks_viz/extract_borehole_data.py" line="134" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/headworks_viz/extract_borehole_data.py" line="136" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b502fc6f-acaa-48cf-a3f2-d8555d455e50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/headworks_viz/extract_borehole_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/headworks_viz/plot_shapefile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflow/validate_conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflow/validate_conversion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/workflow/write_lasfiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/workflow/write_lasfiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py" beforeDir="false" afterPath="$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,18 +18,18 @@
     <session id="-836257448">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="28" />
+          <entry key="project.closed" value="30" />
           <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.4" value="5" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="8" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="9" />
           <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -58,15 +54,15 @@
         <counts>
           <entry key="Python Console" value="210" />
           <entry key="dummy" value="170" />
-          <entry key="py" value="38883" />
-          <entry key="txt" value="412" />
+          <entry key="py" value="44283" />
+          <entry key="txt" value="438" />
           <entry key="yaml" value="2121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="582" />
-          <entry key="Python" value="39093" />
+          <entry key="PLAIN_TEXT" value="608" />
+          <entry key="Python" value="44493" />
           <entry key="YAML" value="2121" />
         </counts>
       </usages-collector>
@@ -77,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/headworks_viz/extract_borehole_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+            <state relative-caret-position="2414">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
               <folding>
                 <element signature="e#189#198#0" expanded="true" />
               </folding>
@@ -89,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/workflow/get_spatial_metadata_from_oracle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
+            <state relative-caret-position="2244">
               <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -101,8 +97,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="180" column="18" selection-start-line="180" selection-start-column="18" selection-end-line="180" selection-end-column="18" />
+            <state relative-caret-position="61">
+              <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
               <folding>
                 <element signature="e#262#281#0" expanded="true" />
               </folding>
@@ -114,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/headworks_viz/plot_shapefile.py">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret selection-end-column="23" />
+              <caret selection-end-line="1" selection-end-column="31" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -147,9 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>depth</find>
-      <find>dataframes</find>
-      <find>raw_log</find>
       <find>style</find>
       <find>filtered_logs</find>
       <find>params</find>
@@ -166,7 +159,6 @@
       <find>update</find>
       <find>filtered_</find>
       <find>run_filter</find>
-      <find>print</find>
       <find>raw_logs</find>
       <find>log-dropdown</find>
       <find>outdir</find>
@@ -177,6 +169,10 @@
       <find>$\p</find>
       <find>ax2</find>
       <find>a</find>
+      <find>print</find>
+      <find>rectangle</find>
+      <find>unknown</find>
+      <find>concrete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,17 +211,17 @@
         <option value="$PROJECT_DIR$/workflow/validate_conversion.py" />
         <option value="$PROJECT_DIR$/workflow/write_las_multirun.py" />
         <option value="$PROJECT_DIR$/workflow/write_lasfiles.py" />
-        <option value="$PROJECT_DIR$/headworks_viz/extract_borehole_data.py" />
         <option value="$PROJECT_DIR$/headworks_viz/plot_shapefile.py" />
+        <option value="$PROJECT_DIR$/headworks_viz/extract_borehole_data.py" />
         <option value="$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="635" />
-    <option name="y" value="-610" />
-    <option name="width" value="576" />
-    <option name="height" value="309" />
+    <option name="x" value="386" />
+    <option name="y" value="-816" />
+    <option name="width" value="861" />
+    <option name="height" value="488" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -357,7 +353,28 @@
       <option name="project" value="LOCAL" />
       <updated>1612485737380</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="plotting of bore headworks">
+      <created>1613716045871</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1613716045871</updated>
+    </task>
+    <task id="LOCAL-00011" summary="plotting of bore headworks">
+      <created>1613716057555</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1613716057555</updated>
+    </task>
+    <task id="LOCAL-00012" summary="plotting of bore headworks">
+      <created>1613965720526</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1613965720526</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -371,21 +388,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1088" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25658587" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25605902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49420443" weight="0.329718" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49367756" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49736565" weight="0.329718" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49578503" weight="0.329718" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.46891466" visible="true" weight="0.3373102" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5310854" side_tool="true" visible="true" weight="0.3373102" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.46680716" visible="true" weight="0.3373102" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5331928" side_tool="true" visible="true" weight="0.3373102" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4873551" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -405,7 +421,8 @@
     <MESSAGE value="did the gamma filtering" />
     <MESSAGE value="some minor changes in handling curves and wrapping output las files" />
     <MESSAGE value="validation of results" />
-    <option name="LAST_COMMIT_MESSAGE" value="validation of results" />
+    <MESSAGE value="plotting of bore headworks" />
+    <option name="LAST_COMMIT_MESSAGE" value="plotting of bore headworks" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://E:/Bores_working/compilation/notebooks/extract_bores_from_oracle.ipynb" />
@@ -479,20 +496,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/workflow/write_las_multirun.py" />
-    <entry file="file://$PROJECT_DIR$/workflow/lasfile_parsing_settings.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/workflow/validate_conversion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1292">
           <caret line="80" column="90" selection-start-line="80" selection-start-column="51" selection-end-line="80" selection-end-column="90" />
-          <folding>
-            <element signature="e#91#103#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -507,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="e#461#480#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -517,9 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="529">
           <caret line="306" column="31" selection-start-line="306" selection-start-column="19" selection-end-line="306" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -527,14 +528,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-          <folding>
-            <element signature="e#207#219#0" expanded="true" />
-          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/workflow_diagram.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/get_construction_details.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -545,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/headworks_viz/extract_borehole_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+        <state relative-caret-position="2414">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
           <folding>
             <element signature="e#189#198#0" expanded="true" />
           </folding>
@@ -555,7 +550,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workflow/get_spatial_metadata_from_oracle.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
+        <state relative-caret-position="2244">
           <caret line="135" column="25" selection-start-line="135" selection-start-column="25" selection-end-line="135" selection-end-column="25" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -566,17 +561,27 @@
     <entry file="file://$PROJECT_DIR$/headworks_viz/plot_shapefile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="23" />
+          <caret selection-end-line="1" selection-end-column="31" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/workflow_diagram.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/workflow/lasfile_parsing_settings.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="61" selection-start-line="40" selection-start-column="61" selection-end-line="40" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/headworks_viz/generate_headworks_plots.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="180" column="18" selection-start-line="180" selection-start-column="18" selection-end-line="180" selection-end-column="18" />
+        <state relative-caret-position="61">
+          <caret line="261" lean-forward="true" selection-start-line="261" selection-end-line="261" />
           <folding>
             <element signature="e#262#281#0" expanded="true" />
           </folding>

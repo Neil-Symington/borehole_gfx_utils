@@ -15,6 +15,9 @@ import geopandas as gpd
 
 infile = r"C:\Users\u77932\Documents\github\borehole_gfx_utils\headworks_viz\AUS_2016_AUST.shp"
 
+# directory to save the plots
+outdir = r"C:\Temp\headworks_figures"
+
 gdf = gpd.read_file(infile)
 
 
@@ -152,19 +155,25 @@ def plot_borehole(df_head, df_constr = None):
         # first we need to get the construction relative to ground level
         assert len(df_constr['DEPTH_REFERENCE_TYPE_ID'].unique() == 1)
         df_constr_merged = df_constr.merge(df_refs, on = 'DEPTH_REFERENCE_TYPE_ID')
-        depth_from = df_constr_merged['INTERVAL_BEGIN'] + df_constr_merged['local_height']
+        depth_from = df_constr_merged['INTERVAL_BEGIN'] - df_constr_merged['local_height']
         depth_from[depth_from < 0] = 0.
         # make sure depth from is never negative
         df_constr_merged['DEPTH_FROM'] = depth_from
-        df_constr_merged['DEPTH_TO'] = df_constr_merged['INTERVAL_END'] + df_constr_merged['local_height']
+        df_constr_merged['DEPTH_TO'] = df_constr_merged['INTERVAL_END'] - df_constr_merged['local_height']
 
         # get the relative depth to and height
         df_constr_merged['REL_INTERVAL_HEIGHT'] = max_bore_depth * (df_constr_merged['DEPTH_TO'] - df_constr_merged['DEPTH_FROM'])/preferred_depth
         df_constr_merged['REL_DEPTH_TO'] = 0.5 - df_constr_merged['DEPTH_TO']/preferred_depth * max_bore_depth
 
+        # get construction maximum depth
+        constr_max_depth = df_constr_merged['DEPTH_TO'].max()
+        if constr_max_depth > preferred_depth:
+            ax.text(x = 0.3, y = 0.1, s = "Construction database max depth is {} m".format(np.round(constr_max_depth, 0)))
 
         # No iterate through and plot theelements
         for index, row in df_constr_merged.iterrows():
+            if row['DEPTH_FROM'] < 0and row['DEPTH_TO'] < 0:
+                continue
             construction_name = row['CONSTRUCTION_NAME']
             if construction_name in construction_plot_params:
                 params = construction_plot_params[construction_name]
@@ -172,6 +181,7 @@ def plot_borehole(df_head, df_constr = None):
                 rel_depth_to = row['REL_DEPTH_TO']
 
                 if construction_name in ['casing', 'casing protector']:
+
                     ax.add_patch(Rectangle((params['xmin'], rel_depth_to), params['width'],rel_height,
                                            linewidth=params['linewidth'], edgecolor=params['edgecolor'],
                                            facecolor=params['facecolor']))
@@ -196,9 +206,13 @@ def plot_borehole(df_head, df_constr = None):
     # plot ground level
     plt.axhline(y=0.5, xmin=0.25, xmax=0.75, c='green', label="ground")
 
-    ground_text = ' '.join([str(np.round(df_refs.loc['ground surface', 'ground_elevation'], 2)),
-                            r'$\pm$',
-                            str(np.round(df_refs.loc['ground surface', 'elev_stdev'],3)), 'm'])
+    elev = df_refs.loc['ground surface', 'ground_elevation']
+    elev_std = df_refs.loc['ground surface', 'elev_stdev']
+    # get the number of signifcant figures
+    n_dec = int(-1*np.log10(elev_std))
+
+    ground_text = ' '.join([str(np.round(elev, n_dec)), r'$\pm$',
+                            str(np.round(elev_std, 3)), 'm'])
     if df_refs.loc['ground surface', 'datum'].upper() == 'AUSTRALIAN HEIGHT DATUM':
         ground_text+= "AHD"
     elif df_refs.loc['ground surface', 'datum'].upper() == 'GPS ELLIPSOID':
@@ -268,7 +282,7 @@ for e in enos:
                 df_header_ss.iloc[0]['GDA94_LATITUDE'], c= 'red', s = 6.)
     ax2.axis("off")
 
-    outfile = os.path.join(r"C:\Temp\headworks_figures", '.'.join([df_header_ss.iloc[0]['BOREHOLE_NAME'], 'png']))
+    outfile = os.path.join(outdir, '.'.join([df_header_ss.iloc[0]['BOREHOLE_NAME'], 'png']))
     plt.savefig(outfile)
     plt.close('all')
 
